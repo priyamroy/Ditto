@@ -18,7 +18,7 @@ jobs:
         with:
           postgresql db: test
           postgresql password: password
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v2.2.2
       - uses: snok/install-poetry@v1.1.4
         with:
           virtualenvs-create: true
