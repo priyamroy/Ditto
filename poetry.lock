@@ -174,7 +174,7 @@ resolved_reference = "309c70222eec33acacb8c21bbb0fbe9bc57de661"
 
 [[package]]
 name = "discord.py"
-version = "2.0.0a3193+g89d24cb0"
+version = "2.0.0a3372+g5a7cfb3c"
 description = "A Python wrapper for the Discord API"
 category = "main"
 optional = false
@@ -185,14 +185,14 @@ develop = false
 aiohttp = ">=3.6.0,<3.8.0"
 
 [package.extras]
-docs = ["sphinx (==3.5.4)", "sphinxcontrib-trio (==1.1.2)", "sphinxcontrib-websupport"]
+docs = ["sphinx (==4.0.2)", "sphinxcontrib-trio (==1.1.2)", "sphinxcontrib-websupport"]
 voice = ["PyNaCl (>=1.3.0,<1.5)"]
 
 [package.source]
 type = "git"
 url = "https://github.com/rapptz/discord.py"
 reference = "master"
-resolved_reference = "89d24cb0bc85deeefa03f667716b296cc63f789e"
+resolved_reference = "5a7cfb3ce63c0dc9099b029363b315c942f13d54"
 
 [[package]]
 name = "donphan"
@@ -210,7 +210,7 @@ docs = ["sphinx (>=3.5.3)", "sphinxcontrib_trio (>=1.1.2)", "sphinxcontrib-websu
 
 [[package]]
 name = "humanize"
-version = "3.6.0"
+version = "3.10.0"
 description = "Python humanize utilities"
 category = "main"
 optional = false
@@ -251,7 +251,7 @@ python-versions = "*"
 
 [[package]]
 name = "jishaku"
-version = "2.0.0"
+version = "2.0.0a317+gca1a387.master"
 description = "A discord.py extension including useful tools for bot development and debugging."
 category = "main"
 optional = false
@@ -259,22 +259,23 @@ python-versions = ">=3.8.0"
 develop = false
 
 [package.dependencies]
-braceexpand = ">=0.1.5"
-"discord.py" = ">=1.5.0"
-humanize = "*"
+braceexpand = ">=0.1.7"
+"discord.py" = ">=1.7.2"
+humanize = ">=3.7.0"
 import-expression = ">=1.0.0,<2.0.0"
 
 [package.extras]
-docs = ["sphinx (>=3.1.2)", "sphinxcontrib-asyncio"]
+docs = ["sphinx (>=3.5.4)", "sphinxcontrib-asyncio"]
 procinfo = ["psutil"]
-test = ["coverage", "flake8", "isort", "pylint", "pytest", "pytest-cov", "pytest-mock"]
-voice = ["discord.py[voice] (>=1.5.0)", "youtube-dl"]
+publish = ["jinja2"]
+test = ["click", "coverage", "flake8", "isort", "pylint", "pytest", "pytest-cov", "pytest-mock"]
+voice = ["discord.py[voice] (>=1.7.2)", "youtube-dl"]
 
 [package.source]
 type = "git"
 url = "https://github.com/Gorialis/jishaku"
 reference = "master"
-resolved_reference = "873f863052a663efab3b6184d2516e03bf16bcf9"
+resolved_reference = "ca1a387725add73863cc6322d6e0cb4f9683c53f"
 
 [[package]]
 name = "multidict"
@@ -580,8 +581,8 @@ donphan = [
     {file = "Donphan-4.4.2.tar.gz", hash = "sha256:b592643542a0709437b5ba8a65bf580a9e66416b6bf32f1726fcbba4a42a592f"},
 ]
 humanize = [
-    {file = "humanize-3.6.0-py3-none-any.whl", hash = "sha256:6d9bee57f856418302b5d11d7229bc401882d800962a19fd6dcdd83672cb15e6"},
-    {file = "humanize-3.6.0.tar.gz", hash = "sha256:a31704cf41f023e268032c4813c6482573320150a0d986f76b245e0451bb89e1"},
+    {file = "humanize-3.10.0-py3-none-any.whl", hash = "sha256:aab7625d62dd5e0a054c8413a47d1fa257f3bdd8e9a2442c2fe36061bdd1d9bf"},
+    {file = "humanize-3.10.0.tar.gz", hash = "sha256:b2413730ce6684f85e0439a5b80b8f402e09f03e16ab8023d1da758c6ff41148"},
 ]
 idna = [
     {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},
@@ -708,6 +709,7 @@ pillow = [
     {file = "Pillow-8.2.0-pp37-pypy37_pp73-manylinux2010_i686.whl", hash = "sha256:aac00e4bc94d1b7813fe882c28990c1bc2f9d0e1aa765a5f2b516e8a6a16a9e4"},
     {file = "Pillow-8.2.0-pp37-pypy37_pp73-manylinux2010_x86_64.whl", hash = "sha256:22fd0f42ad15dfdde6c581347eaa4adb9a6fc4b865f90b23378aa7914895e120"},
     {file = "Pillow-8.2.0-pp37-pypy37_pp73-win32.whl", hash = "sha256:e98eca29a05913e82177b3ba3d198b1728e164869c613d76d0de4bde6768a50e"},
+    {file = "Pillow-8.2.0-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:8b56553c0345ad6dcb2e9b433ae47d67f95fc23fe28a0bde15a120f25257e291"},
     {file = "Pillow-8.2.0.tar.gz", hash = "sha256:a787ab10d7bb5494e5f76536ac460741788f1fbce851068d73a87ca7c35fc3e1"},
 ]
 pluggy = [
