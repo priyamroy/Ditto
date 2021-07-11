@@ -29,7 +29,7 @@ class WebhookHandler(logging.Handler):
         self.format(record)
 
         message = f'{record.message}\n{record.exc_text or ""}'
-        message = message[:1987] + "..." if len(message) > 1987 else message
+        message = message[:4000] + "..." if len(message) > 4000 else message
 
         self._webhook_logger.log(
             discord.Embed(
