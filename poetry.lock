@@ -121,7 +121,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "click"
 version = "8.0.1"
 description = "Composable command line interface toolkit"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -132,7 +132,7 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -156,7 +156,7 @@ resolved_reference = "2987112c31de9bada4ee95cee9007a326e496e19"
 
 [[package]]
 name = "discord-ext-menus"
-version = "1.0.0a30+g309c702"
+version = "1.0.0a31+gfbb8803"
 description = "An extension module to make reaction based menus with discord.py"
 category = "main"
 optional = false
@@ -170,11 +170,11 @@ develop = false
 type = "git"
 url = "https://github.com/rapptz/discord-ext-menus"
 reference = "master"
-resolved_reference = "309c70222eec33acacb8c21bbb0fbe9bc57de661"
+resolved_reference = "fbb8803779373357e274e1540b368365fd9d8074"
 
 [[package]]
 name = "discord.py"
-version = "2.0.0a3193+g89d24cb0"
+version = "2.0.0a3575+g45d498c1"
 description = "A Python wrapper for the Discord API"
 category = "main"
 optional = false
@@ -185,18 +185,19 @@ develop = false
 aiohttp = ">=3.6.0,<3.8.0"
 
 [package.extras]
-docs = ["sphinx (==3.5.4)", "sphinxcontrib-trio (==1.1.2)", "sphinxcontrib-websupport"]
+docs = ["sphinx (==4.0.2)", "sphinxcontrib-trio (==1.1.2)", "sphinxcontrib-websupport"]
+speed = ["orjson (>=3.5.4)"]
 voice = ["PyNaCl (>=1.3.0,<1.5)"]
 
 [package.source]
 type = "git"
 url = "https://github.com/rapptz/discord.py"
 reference = "master"
-resolved_reference = "89d24cb0bc85deeefa03f667716b296cc63f789e"
+resolved_reference = "45d498c1b76deaf3b394d17ccf56112fa691d160"
 
 [[package]]
 name = "donphan"
-version = "4.4.2"
+version = "4.9.0"
 description = "Asynchronous Database ORM for Postgres"
 category = "main"
 optional = false
@@ -251,7 +252,7 @@ python-versions = "*"
 
 [[package]]
 name = "jishaku"
-version = "2.0.0"
+version = "2.3.2a356+ga6cdb41.master"
 description = "A discord.py extension including useful tools for bot development and debugging."
 category = "main"
 optional = false
@@ -259,22 +260,22 @@ python-versions = ">=3.8.0"
 develop = false
 
 [package.dependencies]
-braceexpand = ">=0.1.5"
-"discord.py" = ">=1.5.0"
-humanize = "*"
+braceexpand = ">=0.1.7"
+click = ">=8.0.1"
 import-expression = ">=1.0.0,<2.0.0"
 
 [package.extras]
-docs = ["sphinx (>=3.1.2)", "sphinxcontrib-asyncio"]
+docs = ["sphinx (>=3.5.4)", "sphinxcontrib-asyncio"]
 procinfo = ["psutil"]
-test = ["coverage", "flake8", "isort", "pylint", "pytest", "pytest-cov", "pytest-mock"]
-voice = ["discord.py[voice] (>=1.5.0)", "youtube-dl"]
+publish = ["jinja2"]
+test = ["click", "coverage", "flake8", "isort", "pylint", "pytest", "pytest-cov", "pytest-mock"]
+voice = ["youtube-dl"]
 
 [package.source]
 type = "git"
 url = "https://github.com/Gorialis/jishaku"
 reference = "master"
-resolved_reference = "873f863052a663efab3b6184d2516e03bf16bcf9"
+resolved_reference = "a6cdb41aed32c7dbd4273d63aa57996cc1f90fa6"
 
 [[package]]
 name = "multidict"
@@ -576,8 +577,8 @@ discord-ext-alternatives = []
 discord-ext-menus = []
 "discord.py" = []
 donphan = [
-    {file = "Donphan-4.4.2-py3-none-any.whl", hash = "sha256:670fd10eda91f61f2f6372b7ced62300fd5f3fa73bd6f2648ba9f3c13046f0da"},
-    {file = "Donphan-4.4.2.tar.gz", hash = "sha256:b592643542a0709437b5ba8a65bf580a9e66416b6bf32f1726fcbba4a42a592f"},
+    {file = "Donphan-4.9.0-py3-none-any.whl", hash = "sha256:354960abcd3147f90617ea122477f3a61ab2b9af5a044e5797fb377ff860224a"},
+    {file = "Donphan-4.9.0.tar.gz", hash = "sha256:f6268eacde70d73702820c9e43f29736941194d848ba1f02cd00a339970f8f12"},
 ]
 humanize = [
     {file = "humanize-3.6.0-py3-none-any.whl", hash = "sha256:6d9bee57f856418302b5d11d7229bc401882d800962a19fd6dcdd83672cb15e6"},
@@ -708,6 +709,7 @@ pillow = [
     {file = "Pillow-8.2.0-pp37-pypy37_pp73-manylinux2010_i686.whl", hash = "sha256:aac00e4bc94d1b7813fe882c28990c1bc2f9d0e1aa765a5f2b516e8a6a16a9e4"},
     {file = "Pillow-8.2.0-pp37-pypy37_pp73-manylinux2010_x86_64.whl", hash = "sha256:22fd0f42ad15dfdde6c581347eaa4adb9a6fc4b865f90b23378aa7914895e120"},
     {file = "Pillow-8.2.0-pp37-pypy37_pp73-win32.whl", hash = "sha256:e98eca29a05913e82177b3ba3d198b1728e164869c613d76d0de4bde6768a50e"},
+    {file = "Pillow-8.2.0-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:8b56553c0345ad6dcb2e9b433ae47d67f95fc23fe28a0bde15a120f25257e291"},
     {file = "Pillow-8.2.0.tar.gz", hash = "sha256:a787ab10d7bb5494e5f76536ac460741788f1fbce851068d73a87ca7c35fc3e1"},
 ]
 pluggy = [
